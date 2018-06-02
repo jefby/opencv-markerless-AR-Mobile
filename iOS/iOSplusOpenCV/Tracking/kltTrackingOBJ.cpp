@@ -35,6 +35,7 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/calib3d/calib3d.hpp>
 #include <opencv2/video/tracking.hpp>
+#include <iostream>
 
 using namespace std;
 using namespace cv;
@@ -137,10 +138,11 @@ bool kltTrackingOBJ::onTracking(Mat& image)
 			object_position = next_object_position;
             
             if(object_position.size() >= 4){
-                cv::line( image, object_position[0], object_position[1], cv::Scalar( 0, 255, 0 ), 4 );
-                cv::line( image, object_position[1], object_position[2], cv::Scalar( 0, 255, 0 ), 4 );
-                cv::line( image, object_position[2], object_position[3], cv::Scalar( 0, 255, 0 ), 4 );
-                cv::line( image, object_position[3], object_position[0], cv::Scalar( 0, 255, 0 ), 4 );
+                std::cout <<"object position : " << object_position << std::endl;
+                cv::line( image, object_position[0], object_position[1], cv::Scalar( 0, 255, 0 ), 2 );
+                cv::line( image, object_position[1], object_position[2], cv::Scalar( 0, 255, 0 ), 2 );
+                cv::line( image, object_position[2], object_position[3], cv::Scalar( 0, 255, 0 ), 2 );
+                cv::line( image, object_position[3], object_position[0], cv::Scalar( 0, 255, 0 ), 2 );
             }
 		}
 	}

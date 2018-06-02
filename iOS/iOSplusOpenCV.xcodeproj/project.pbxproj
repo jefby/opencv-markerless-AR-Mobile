@@ -252,6 +252,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				TargetAttributes = {
+					8AF4D5F713F430F5007944D5 = {
+						DevelopmentTeam = 54K9795L9X;
+					};
+				};
 			};
 			buildConfigurationList = 8AF4D5F213F430F5007944D5 /* Build configuration list for PBXProject "iOSplusOpenCV" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -424,9 +429,12 @@
 		8AF4D61A13F430F6007944D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 54K9795L9X;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -435,11 +443,13 @@
 				GCC_PREFIX_HEADER = "iOSplusOpenCV/iOSplusOpenCV-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "iOSplusOpenCV/iOSplusOpenCV-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/iOSplusOpenCV/android-nonfree/obj/local/armeabi-v7a",
 					"$(PROJECT_DIR)/iOSplusOpenCV/opencv-nonfree/obj/local/armeabi-v7a",
 				);
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jefby.marklessAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -449,9 +459,12 @@
 		8AF4D61B13F430F6007944D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 54K9795L9X;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -460,11 +473,13 @@
 				GCC_PREFIX_HEADER = "iOSplusOpenCV/iOSplusOpenCV-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "iOSplusOpenCV/iOSplusOpenCV-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/iOSplusOpenCV/android-nonfree/obj/local/armeabi-v7a",
 					"$(PROJECT_DIR)/iOSplusOpenCV/opencv-nonfree/obj/local/armeabi-v7a",
 				);
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jefby.marklessAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
